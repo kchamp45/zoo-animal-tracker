@@ -8,7 +8,7 @@
 
 Welcome to my zoo animal tracker!  It allows a zoo administrator to keep track of the animals at his/her zoo.  
 
-![app-screenshot](https://github.com/.png)
+![app-screenshot](https://github.com/kchamp45/zoo-animal-tracker/blob/master/resources/images/Screen%20Shot%202017-09-22%20at%201.40.52%20PM.png)
 
 ## Setup/Installation Requirements
 
