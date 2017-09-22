@@ -7,7 +7,7 @@ import { Animal } from './animal.model';
   <div class="container">
     <h1>My Wonderful Zoo</h1>
     <div class="panel">
-    <img src="/resources/images/otter.jpg" alt="Picture of an Otter">
+    <img src="/resources/images/otter.jpg"><alt="Picture of an otter backgliding"/>
     </div>
     <new-animal (newAnimalSender)="addAnimal($event)"> </new-animal>
     <div class="row">

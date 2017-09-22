@@ -1,4 +1,4 @@
-h1, #add {
+h1 {
   text-align: center;
 }
 .red {
@@ -20,7 +20,6 @@ img {
   height: 400px;
   width: 100%;
 }
-
-/*label , .formh3{
-  color: white;
-}*/
+.filter {
+  text-align: center;
+}

@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-  <div>
+  <div class="filter">
   <label>View by maturity</label><br>
   <select (change)="onFilterAgeChange($event.target.value)">
       <option value="allAnimals" selected="selected">All Animals</option>

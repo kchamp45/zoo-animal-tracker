@@ -47,7 +47,7 @@ Javascript, Typescript, Angular JS, HTML, and CSS.  Supporting libraries from Bo
 
 * User can check off the animals that have been fed that day, the number of feedings, and the time of feeding.
 * User can track where the animal came from (i.e. the animal's history);
-* User can the animal's illness, if any.
+* User can track the animal's medical records.
 
 ### License
 
