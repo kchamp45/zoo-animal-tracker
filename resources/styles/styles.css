@@ -20,6 +20,6 @@ img {
   height: 400px;
   width: 100%;
 }
-.filter {
-  text-align: center;
+.filter, .filter2 {
+  margin-left: 15px;
 }
