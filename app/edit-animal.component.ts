@@ -8,7 +8,7 @@ import { Animal } from './animal.model';
   template: `
   <div>
     <div *ngIf="childSelectedAnimal">
-      <h3 class="formh3">Edit Keg</h3>
+      <h3 class="formh3">Edit Animal</h3>
       <input [(ngModel)]="childSelectedAnimal.species">
       <input [(ngModel)]="childSelectedAnimal.name">
       <input [(ngModel)]="childSelectedAnimal.age">

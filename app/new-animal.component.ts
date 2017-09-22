@@ -49,7 +49,7 @@ export class NewAnimalComponent {
 
   submitForm (newSpecies: string, newName: string, newAge: number, newDiet: string, newLocation: string, newCaretaker: number, newGender: string, newLikes: string, newDislikes: string){
     var newAnimalToAdd: Animal = new Animal(newSpecies, newName, newAge, newDiet, newLocation, newCaretaker, newGender, newLikes, newDislikes);
-    this.newAnimalSender.emit(newAnimalToAdd);
+    this.newAnimalSender.emit(newAnimalToAdd)
     this.showNewAnimalForm = false;
   }
 

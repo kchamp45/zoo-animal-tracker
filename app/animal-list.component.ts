@@ -5,27 +5,26 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <select (change)="onFilterAgeChange($event.target.value)">
-      <option value="allAnimals" selected="selected">All Animalss</option>
+      <option value="allAnimals" selected="selected">All Animals</option>
       <option value="young">Young Animals</option>
       <option value="mature">Mature Animals</option>
  </select>
  <hr>
 
   <ul>
-
-    <div *ngFor = "let animal of childAnimalList | maturity:filterByAge >
+    <div *ngFor = "let animal of childAnimalList | maturity:filterByAge" >
     <div class="col-md-3">
     <div class="well">
         <h3> Species: {{animal.species}} </h3>
         <h4> Name: <strong> {{animal.name}}</strong></h4>
-        <h4> Age: {{animal age}} years old </h4>
+        <h4> Age: {{animal.age}} years old </h4>
         <h4 [class]="dietColor(animal)"> Diet: {{animal.diet}} </h4>
         <h4> Location: {{animal.location}} </h4>
         <h4> Number of Caretakers: {{animal.numCaretaker}} </h4>
         <h4> Gender: {{animal.sex}} </h4>
         <h4> Likes: {{animal.likes}} </h4>
         <h4> Dislikes: {{animal.dislikes}} </h4>
-        <button (click)="editKegClicked(keg)">Edit</button>
+        <button (click)="editAnimalClicked(animal)">Edit</button>
         <h4> Has been fed today: {{animal.fed}} </h4>
     </div>
     </div>
@@ -35,9 +34,9 @@ import { Animal } from './animal.model';
 })
 
 export class AnimalListComponent {
-  
+
   @Input() childAnimalList: Animal[];
-  @Output() editClickSender = new EventEmitter();
+  @Output() clickSender = new EventEmitter();
   filterByAge: string;
 
   dietColor(animal){
@@ -51,11 +50,10 @@ export class AnimalListComponent {
   }
 
   editAnimalClicked(clickedAnimal: Animal){
-    this.editClickSender.emit(clickedAnimal);
+    this.clickSender.emit(clickedAnimal);
   }
 
   onFilterAgeChange(optionFromMenu){
     this.filterByAge = optionFromMenu;
   }
-
 }
