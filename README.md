@@ -23,7 +23,6 @@ To use this application, you will need to do the following.  In the terminal, pl
 
 There are no known bugs.
 
-
 ## Technologies Used
 
 Javascript, Typescript, Angular JS, HTML, and CSS.  Supporting libraries from Bootstrap and JQuery were employed as needed.
@@ -44,6 +43,11 @@ Javascript, Typescript, Angular JS, HTML, and CSS.  Supporting libraries from Bo
 | edit the animal's species, name, age, diet, location in the zoo, etc. | enter said information | the information of said animal is updated |
 | filter through the records and display animals based of their age (i.e. maturity)| select "young" | Display only animals younger than 2 yo|
 
+## Future Functionalities
+
+* User can check off the animals that have been fed that day, the number of feedings, and the time of feeding.
+* User can track where the animal came from (i.e. the animal's history);
+* User can the animal's illness, if any.
 
 ### License
 

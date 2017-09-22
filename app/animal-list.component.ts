@@ -4,11 +4,14 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
+  <div>
+  <label>View by maturity</label><br>
   <select (change)="onFilterAgeChange($event.target.value)">
       <option value="allAnimals" selected="selected">All Animals</option>
       <option value="young">Young Animals</option>
       <option value="mature">Mature Animals</option>
  </select>
+ </div>
  <hr>
 
   <ul>
@@ -21,11 +24,10 @@ import { Animal } from './animal.model';
         <h4 [class]="dietColor(animal)"> Diet: {{animal.diet}} </h4>
         <h4> Location: {{animal.location}} </h4>
         <h4> Number of Caretakers: {{animal.numCaretaker}} </h4>
-        <h4> Gender: {{animal.sex}} </h4>
+        <h4> Gender: {{animal.gender}} </h4>
         <h4> Likes: {{animal.likes}} </h4>
         <h4> Dislikes: {{animal.dislikes}} </h4>
-        <button (click)="editAnimalClicked(animal)">Edit</button>
-        <h4> Has been fed today: {{animal.fed}} </h4>
+        <button class="btn btn-success" (click)="editAnimalClicked(animal)">Edit</button>
     </div>
     </div>
    </div>

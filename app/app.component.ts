@@ -6,6 +6,9 @@ import { Animal } from './animal.model';
   template: `
   <div class="container">
     <h1>My Wonderful Zoo</h1>
+    <div class="panel">
+    <img src="/resources/images/otter.jpg" alt="Picture of an Otter">
+    </div>
     <new-animal (newAnimalSender)="addAnimal($event)"> </new-animal>
     <div class="row">
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>

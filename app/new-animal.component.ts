@@ -5,11 +5,11 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
   <div *ngIf="!showNewAnimalForm">
-    <button (click)="newAnimalButtonClicked()">Add a New Animal</button>
+    <button class="btn btn-success" id="add" (click)="newAnimalButtonClicked()">Add a New Animal</button><br>
   </div>
 
   <div *ngIf="showNewAnimalForm" class="newAnimalForm">
-    <h1>New Animal</h1>
+    <h3>New Animal</h3>
     <div>
        <label>Enter Animal Species:</label>
        <input #newSpecies>
@@ -36,7 +36,7 @@ import { Animal } from './animal.model';
        <label>Enter Animal Dislikes:</label>
        <input #newDislikes>
        <br>
-       <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretaker.value, newGender.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretaker.value=''; newGender.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+       <button class="btn btn-danger" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretaker.value, newGender.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretaker.value=''; newGender.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
        <br>
      </div>
    </div>
