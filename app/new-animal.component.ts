@@ -7,6 +7,7 @@ import { Animal } from './animal.model';
   <div *ngIf="!showNewAnimalForm">
     <button class="btn btn-success" id="add" (click)="newAnimalButtonClicked()">Add a New Animal</button><br>
   </div>
+  <hr>
 
   <div *ngIf="showNewAnimalForm" class="newAnimalForm">
     <h3>New Animal</h3>

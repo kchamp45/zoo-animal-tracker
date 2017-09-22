@@ -19,7 +19,7 @@ import { Animal } from './animal.model';
        <option value="allAnimals" selected="selected">All Animals</option>
        <option value="plants">Plant eaters</option>
        <option value="meat">Meat lovers</option>
-       <option value="everything">It's free food</option>
+       <option value="everything">Plants & Meat</option>
     </select>
   </div>
 <hr>

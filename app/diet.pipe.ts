@@ -12,7 +12,7 @@ export class DietPipe implements PipeTransform {
 
     if (desiredFilter == "plants"){
       for (var i=0; i<input.length; i++) {
-        if(input[i].diet == "Herbivore" ){
+        if(input[i].diet == "Herbivore"){
           output.push(input[i]);
         }
       }
@@ -30,7 +30,7 @@ export class DietPipe implements PipeTransform {
             output.push(input[i]);
           }
         }
-        return output;        
+        return output;
     } else {
       return input;
     }
